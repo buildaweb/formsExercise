@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Customer Experience Survey">
+  <title>Survey</title>
+</head>
+
+<body>
+  <form>
+    <!-- Fieldset -->
+    <fieldset>
+      <legend>Customer Experience Survey</legend>
+      <!-- Select Element -->
+      <label for="store">Store Number</label>
+      <select id="store" name="store">
+        <option value="3109">3109</option>
+        <option value="2421">2421</option>
+        <option value="5357">5357</option>
+      </select>
+      <!-- Fieldset -->
+      <fieldset>
+        <legend>When you visited:</legend>
+        <!-- Date Input -->
+        <div>
+          <label for="date">Date Visited</label>
+          <input type="date" id="date" name="date">
+        </div>
+        <!-- Time Input -->
+        <div>
+          <label for="time">Time</label>
+          <input type="time" id="time" name="time">
+        </div>
+      </fieldset>
+      <!-- Text Input -->
+      <div>
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" placeholder="Name">
+      </div>
+      <!-- Email Input -->
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Email">
+      </div>
+      <!-- Fieldset -->
+      <fieldset>
+        <legend>Gender</legend>
+        <!-- Radio Inputs -->
+        <div>
+          <input type="radio" name="gender" id="male" value="Male">
+          <label for="male">Male</label>
+        </div>
+        <div>
+          <input type="radio" name="gender" id="female" value="Female">
+          <label for="female">Female</label>
+        </div>
+      </fieldset>
+      <!-- Textarea -->
+      <div>
+        <label for="textarea">Tell us about your experience:</label>
+        <br>
+        <textarea id="textarea" cols="20" rows="2" name="textarea"></textarea>
+      </div>
+      <!-- Number Input -->
+      <div>
+        <label for="number">Times visited in the last month:</label>
+        <br>
+        <input type="number" id="number" name="number">
+      </div>
+      <!-- Checkbox Input -->
+      <div>
+        <input type="checkbox" id="checkbox" name="checkbox">
+        <label for="checkbox">Please check the box if you would be willing to be contacted about your experience</label>
+      </div>
+      <!-- Submit Input -->
+      <input type="submit">
+    </fieldset>
+  </form>
+</body>
+
+</html>
